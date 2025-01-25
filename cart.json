@@ -1,0 +1,24 @@
+[
+    {
+      "name": "wtf",
+      "id":1,
+      "price": 20.0,
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Drop-of-the-week-2_02_0RJIusI.jpg?format=webp&w=480&dpr=1.5",
+      "type": "round neck",
+      "size": 34,
+      "sleeve": "half",
+      "fit": "regular",
+      "fabric": "cotton"
+    },
+    {
+      "name": "wtf",
+      "id":2,
+      "price": 20.0,
+      "image": "https://veirdo.in/cdn/shop/files/Artboard8.png?v=1724158576",
+      "type": 0,
+      "size": 0,
+      "sleeve": 0,
+      "fit": 0,
+      "fabric": 0
+    }
+]
