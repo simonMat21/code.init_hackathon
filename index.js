@@ -35,11 +35,13 @@ const server = http.createServer((req, res) => {
   } else if (req.url.startsWith("/product.html")) {
     serveFile("product.html", "text/html", res);
   } else if (req.url.startsWith("/add-product")) {
-    addToCart(req.url.slice(-1));
+    addToCart(req.url.split("?")[1]);
   } else if (req.url.startsWith("/remove-product")) {
-    removeFromCart(req.url.slice(-1));
+    removeFromCart(req.url.split("?")[1]);
   } else if (req.url.startsWith("/cart.html")) {
     serveFile("cart.html", "text/html", res);
+  } else if (req.url.startsWith("/end.html")) {
+    serveFile("end.html", "text/html", res);
   } else if (req.url.startsWith("/signup.html")) {
     serveFile("signup.html", "text/html", res);
   } else if (req.url.startsWith("/login.html")) {

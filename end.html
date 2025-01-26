@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Congratulations!</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+        overflow: hidden;
+        font-family: "Arial", sans-serif;
+      }
+
+      .container {
+        text-align: center;
+        background: #ffffff;
+        padding: 40px;
+        border-radius: 15px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        position: relative;
+        overflow: hidden;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #4caf50;
+        margin: 0 0 15px;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: #333;
+        margin: 15px 0;
+      }
+
+      .highlight {
+        color: #f50057;
+        font-weight: bold;
+      }
+
+      .confetti {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+        overflow: hidden;
+      }
+
+      .confetti-piece {
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background-color: hsl(0, 100%, 50%);
+        animation: fall linear infinite;
+      }
+
+      @keyframes fall {
+        0% {
+          transform: translateY(-100vh) rotate(0deg);
+          opacity: 1;
+        }
+        100% {
+          transform: translateY(100vh) rotate(360deg);
+          opacity: 0;
+        }
+      }
+
+      button {
+        margin-top: 25px;
+        padding: 15px 30px;
+        font-size: 1.2rem;
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #388e3c;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎉 Congratulations! 🎉</h1>
+      <p>
+        You are one of the <b>Buy N' Go's 2025 special offer winners</b>!<br />
+        Your purchase will arrive for <span class="highlight">FREE</span> on the
+        <b>28th of February 2025</b>. 🚚🎁
+      </p>
+      <button onclick="location.reload()">Celebrate Again</button>
+    </div>
+    <div class="confetti" id="confetti"></div>
+
+    <script>
+      const confettiContainer = document.getElementById("confetti");
+      const confettiCount = 150;
+
+      function createConfettiPiece() {
+        const piece = document.createElement("div");
+        piece.classList.add("confetti-piece");
+        piece.style.backgroundColor = `hsl(${Math.random() * 360}, 70%, 50%)`;
+        piece.style.left = `${Math.random() * 100}%`;
+        piece.style.animationDuration = `${Math.random() * 3 + 2}s`;
+        piece.style.animationDelay = `${Math.random() * 2}s`;
+        confettiContainer.appendChild(piece);
+
+        setTimeout(() => {
+          piece.remove();
+        }, 5000);
+      }
+
+      for (let i = 0; i < confettiCount; i++) {
+        createConfettiPiece();
+      }
+    </script>
+  </body>
+</html>

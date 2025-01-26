@@ -81,8 +81,7 @@ function displayProducts(products) {
 
 function handleCheckout() {
   if (total > 0) {
-    alert("Thank you for your purchase!");
-    location.reload(); // Reload the page
+    window.location.href = "/end.html"; // Reload the page
   } else {
     alert("Your cart is empty!");
   }
