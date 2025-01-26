@@ -1,21 +1,19 @@
-
-
-/* .playwrite-in-<uniquifier> {
-  font-family: "Playwrite IN", serif;
-  font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-} */
 body {
-  font-family: "Playwrite IN", serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures the body takes full viewport height */
   margin: 0;
-  padding: 0;
-  background-color: #ede4e4;
-}
+  font-family: "Roboto", sans-serif;
 
+  padding: 0;
+  background-color: #eae3e3;
+}
+/*hedaerrrr*/
 header {
-  font-family: "Playwrite IN" , sans-serif;
-  background-color: #8c6c6a;
+  font-family: "Roboto", sans-serif;
+  background-color: #78504e;
+  background: linear-gradient(90deg, #846666, #3b2121);
+
   color: rgb(239, 229, 229);
   padding: 1rem 0;
   text-align: center;
@@ -24,7 +22,7 @@ header {
 nav {
   display: flex;
   justify-content: center;
-  background-color: #444;
+  background-color: #3d3c3c;
   padding: 0.5rem 0;
 }
 
@@ -33,11 +31,10 @@ nav a {
   text-decoration: none;
   margin: 0 1rem;
   padding: 0.5rem;
-  
 }
 
 nav a:hover {
-  background-color: #555;
+  background-color: #605e5e;
   border-radius: 5px;
 }
 
@@ -52,6 +49,7 @@ nav a:hover {
   border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
+  width: 7cm;
 }
 
 #search-input:focus {
@@ -59,35 +57,89 @@ nav a:hover {
 }
 
 #search-form button {
-  background-color: #28a745;
+  background-color: #a24444;
   color: white;
   border: none;
   padding: 0.5rem 1rem;
   margin-left: 0.5rem;
+  width: 3cm;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.top-btns {
+  background-color: #a24444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  width: 3cm;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
 #search-form button:hover {
-  background-color: #218838;
+  background-color: #f5caca;
 }
-
 
 .hero {
   background: url("https://via.placeholder.com/1500x500") no-repeat center
     center/cover;
-  font-family: 'Kungile', sans-serif;
-  height: 50vh;
+  height: 50vh; /* Adjust height as needed */
   display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  text-shadow: 2px 2px 5px black;
+  flex-direction: column; /* Stack elements vertically */
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Align text in the center */
+  color: #319c4f; /* Default color */
+  text-shadow: 1px 1px 3px black; /* Subtle text shadow */
 }
 
 .hero h1 {
+  font-family: "Playfair Display", serif;
   font-size: 3rem;
+  color: #823434;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+.main-heading {
+  /*background-image: url('https://www.shutterstock.com/image-illustration/plain-pastel-brown-solid-color-260nw-1785414026.jpg'); /* Replace with your image URL */
+  background-size: cover; /* Ensures the image covers the whole heading */
+  background-position: center; /* Centers the background image */
+  color: white; /* Changes the text color to white so it stands out on the background */
+  padding: 30px; /* Adds space around the text */
+  padding-bottom: 10px;
+  text-align: center; /* Centers the text */
+  font-family: "Playfair Display", serif; /* Stylish serif font */
+  font-size: 4rem; /* Large font size for emphasis */
+  font-weight: 700; /* Bold text */
+  color: rgb(243, 236, 236); /* White text for visibility */
+  text-align: center; /* Center-align the text */
+  margin: 0; /* Remove default margins */
+  text-shadow: 2px 2px 5px black; /* Add shadow for better contrast */
+}
+
+.subheading {
+  font-family: "ariel", sans-serif; /* Modern sans-serif font */
+  font-size: 1.5rem; /* Smaller than main heading */
+  font-weight: 600; /* Regular text */
+  color: #2d2b2b; /* Light gray color */
+  margin: 0.5rem 0 1rem; /* Add spacing between headings */
+  text-shadow: 0px 0px 0px black; /* Subtle shadow*/
+  padding-bottom: 40px;
+}
+* Call-to-Action Button */ .cta-button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff; /* Button color */
+  color: white; /* Text color */
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker color on hover */
 }
 
 .products {
@@ -109,7 +161,7 @@ nav a:hover {
 .product img {
   width: 100%; /* Make the image fill the container's width */
   height: 250px; /* Set a fixed height for uniformity */
-  object-fit: cover; /* Ensures the image fills the box while maintaining aspect ratio */
+  object-fit: contain; /* Ensures the image fills the box while maintaining aspect ratio */
   border-radius: 5px; /* Optional: Add rounded corners */
 }
 
@@ -144,17 +196,15 @@ nav a:hover {
 }
 
 #cart-icon:hover {
-  color: #e47d6b;  /* Change color on hover */
+  color: #f4f0ef; /* Change color on hover */
 }
-
-
 
 footer {
   text-align: center;
-  padding: 1rem;
-  background-color: #333;
+  padding: 0;
+  background-color: #3e3b3be5;
   color: white;
-  margin-top: 2rem;
+  margin-top: 0;
 }
 #cart-icon {
   display: flex;
@@ -180,8 +230,8 @@ footer {
 }
 
 #cart-container {
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
+  background-color: #f5f1f1;
+  border: 1px solid #967e7e;
   border-radius: 5px;
   padding: 1rem;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -231,7 +281,25 @@ footer {
 .cta-button {
   display: inline-block;
   padding: 0.5rem 1rem;
-  background-color: #007bff;
+  background-color: #3d3c3c(0, 2%, 20%);
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.cta-button1 {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #682b2b;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+.cta-button2 {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #722626;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -239,35 +307,111 @@ footer {
 }
 
 .cta-button:hover {
-  background-color: #0056b3;
+  background-color: #575655;
 }
 
+.about-btn {
+  background-color: #8397ad; /* Blue for About Us */
+}
 
-#cart {
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+  .product img {
+    height: 200px;
+  }
+}
+#products {
+  padding-top: 2rem;
   margin-top: 2rem;
-  padding: 1rem;
-  background-color: white;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  background-color: #f9f9f9; /* Optional: Different background for the section */
 }
 
-#cart h2 {
-  margin-top: 0;
+.products h2 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 1rem;
+  color: #333;
 }
-
-#cart ul {
-  list-style-type: none;
+html {
+  scroll-behavior: smooth;
+}
+#about-us {
+  background-color: #2c2a2a;
   padding: 0;
+  text-align: center;
+  margin-top: 0;
+  border-top: 1px solid #ddd;
 }
 
-#cart ul li {
-  margin-bottom: 0.5rem;
+#about-us .about-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-#cart p {
+#about-us h2 {
+  font-size: 2rem;
+  color: #fbf6f6;
+  margin-bottom: 1rem;
+}
+
+#about-us p {
+  font-size: 1rem;
+  color: #c5c2c2;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.payment-options button:hover {
+  background-color: #45a049;
+}
+/* Overall Payment Page Styling */
+.payment-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Section */
+.product-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-image {
+  width: 100%;
+  height: 300px; /* Adjust based on your desired height */
+  object-fit: contain; /* Ensures the image scales properly without distortion */
+  border-radius: 10px;
+  background-color: #f9f9f9; /* Adds a subtle background behind the image */
+}
+
+.product-title {
+  font-size: 1.5rem;
   font-weight: bold;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 1.2rem;
+  color: #555;
+} /* Background Wrapper (Optional Blur) */
+.background-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  background-color: inherit; /* Dynamic color set via JS */
+  filter: blur(10px);
+  opacity: 0.7;
 }

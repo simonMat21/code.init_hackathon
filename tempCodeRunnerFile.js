@@ -1,0 +1,1 @@
+const products = JSON.parse(fs.readFileSync("products.json", "utf-8"));

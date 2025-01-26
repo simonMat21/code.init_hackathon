@@ -1,24 +1,22 @@
 [
-    {
-      "name": "wtf",
-      "id":1,
-      "price": 20.0,
-      "image": "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Drop-of-the-week-2_02_0RJIusI.jpg?format=webp&w=480&dpr=1.5",
-      "type": "round neck",
-      "size": 34,
-      "sleeve": "half",
-      "fit": "regular",
-      "fabric": "cotton"
-    },
-    {
-      "name": "wtf",
-      "id":2,
-      "price": 20.0,
-      "image": "https://veirdo.in/cdn/shop/files/Artboard8.png?v=1724158576",
-      "type": 0,
-      "size": 0,
-      "sleeve": 0,
-      "fit": 0,
-      "fabric": 0
-    }
+  {
+    "name": "Energy Black Oversized Back Graphic Printed Tshirt",
+    "id": 4,
+    "price": 549,
+    "image": "https://veirdo.in/cdn/shop/files/v36_1.jpg?v=1717408924&width=360",
+    "type": "Round Neck",
+    "sleeve": "Half Sleeve",
+    "fit": "Oversized",
+    "fabric": "Cotton"
+  },
+  {
+    "name": "Men Printed Hooded Neck Cotton Blend Black T-Shirt",
+    "id": 9,
+    "price": 229,
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/t/r/d/s-tblhdful-d123-tripr-original-imah873fkqtp8zse.jpeg?q=70",
+    "type": "Hooded Neck",
+    "sleeve": "Full Sleeve",
+    "fit": "Regular",
+    "fabric": "Cotton Blend"
+  }
 ]

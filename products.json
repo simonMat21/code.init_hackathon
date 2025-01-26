@@ -1,68 +1,102 @@
 [
   {
-    "name": "wtf",
+    "name": "Men Graphic Print Regular Fit Hoodie ",
     "id": 1,
-    "price": 20.5,
+    "price": 1499.0,
     "image": "https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Drop-of-the-week-2_02_0RJIusI.jpg?format=webp&w=480&dpr=1.5",
-    "type": "round neck",
-    "size": 34,
-    "sleeve": "half",
-    "fit": "regular",
-    "fabric": "cotton"
+    "type": "Hoodie <br>neck",
+    "sleeve": "Full Sleeve",
+    "fit": "Regular Fit",
+    "fabric": "Cotton"
   },
   {
-    "name": "wtf",
+    "name": "Hustle Black Oversized Back Graphic Printed Tshirt",
     "id": 2,
-    "price": 20.0,
+    "price": 510.0,
     "image": "https://veirdo.in/cdn/shop/files/Artboard8.png?v=1724158576",
-    "type": 0,
-    "size": 0,
-    "sleeve": 0,
-    "fit": 0,
-    "fabric": 0
+    "type": "Round Neck",
+    "sleeve": "Half Sleeve",
+    "fit": "Oversized",
+    "fabric": "Cotton"
   },
   {
-    "name": "wtf",
+    "name": "Doodle Black Oversized Back Graphic Printed Tshirt",
     "id": 3,
-    "price": 20.0,
+    "price": 501.0,
     "image": "https://veirdo.in/cdn/shop/files/b_0119493a-9927-4550-8323-baefe5f625c0.jpg?v=1724147309",
-    "type": 0,
-    "size": 0,
-    "sleeve": 0,
-    "fit": 0,
-    "fabric": 0
+    "type": "Round Neck",
+    "sleeve": "Half Sleeve",
+    "fit": "Oversized",
+    "fabric": "Cotton"
   },
   {
-    "name": "wtf",
+    "name": "Energy Black Oversized Back Graphic Printed Tshirt",
     "id": 4,
-    "price": 20.0,
+    "price": 549.0,
     "image": "https://veirdo.in/cdn/shop/files/v36_1.jpg?v=1717408924&width=360",
-    "type": 0,
-    "size": 0,
-    "sleeve": 0,
-    "fit": 0,
-    "fabric": 0
+    "type": "Round Neck",
+    "sleeve": "Half Sleeve",
+    "fit": "Oversized",
+    "fabric": "Cotton"
   },
   {
-    "name": "wtf",
+    "name": "Bouncy Toonz Oversized T Shirts for Men",
     "id": 5,
-    "price": 20.0,
+    "price": 375.0,
     "image": "https://m.media-amazon.com/images/S/aplus-media-library-service-media/5257c2ca-fffa-490a-a0e0-5d2ba99ed55d.__CR0,0,1000,1000_PT0_SX300_V1___.jpg",
-    "type": 0,
-    "size": 0,
-    "sleeve": 0,
-    "fit": 0,
-    "fabric": 0
+    "type": "Crew-Neck",
+    "sleeve": "Half Sleeve",
+    "fit": "Regular Fit",
+    "fabric": "Cotton"
   },
   {
-    "name": "wtf",
+    "name": "Loose Fit Graphic Print Crew-Neck T-Shirt",
     "id": 6,
-    "price": 20.0,
+    "price": 379.0,
     "image": "https://assets.ajio.com/medias/sys_master/root/20230609/VkiV/64830ebcd55b7d0c635cc884/-473Wx593H-466230258-black-MODEL.jpg",
-    "type": 0,
-    "size": 0,
-    "sleeve": 0,
-    "fit": 0,
-    "fabric": 0
+    "type": "Crew-Neck",
+    "sleeve": "Short Sleeve",
+    "fit": "Loose Fit",
+    "fabric": "Cotton"
+  },
+  {
+    "name": "Men Solid V Neck Cotton Blend Black T-Shirt",
+    "id": 7,
+    "price": 259.0,
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/track-suit/t/7/r/xxl-tblrnfuld158-bljogj36tracksuit-tripr-original-imah89c69znzkuzg.jpeg?q=70",
+    "type": "V Neck",
+    "sleeve": "Full Sleeve",
+    "fit": "Regular",
+    "fabric": "Cotton Blend"
+  },
+  {
+    "name": "Men Printed Hooded Neck Cotton Blend Black T-Shirt",
+    "id": 8,
+    "price": 254.0,
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/5/1/z/l-tblhdfulmask-dp-lion-tripr-original-imah8bbzbhzydqvh.jpeg?q=70",
+    "type": "Hooded Neck",
+    "sleeve": "Full Sleeve",
+    "fit": "Regular",
+    "fabric": "Cotton Blend"
+  },
+  {
+    "name": "Men Printed Hooded Neck Cotton Blend Black T-Shirt",
+    "id": 9,
+    "price": 229.0,
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/t/r/d/s-tblhdful-d123-tripr-original-imah873fkqtp8zse.jpeg?q=70",
+    "type": "Hooded Neck",
+    "sleeve": "Full Sleeve",
+    "fit": "Regular",
+    "fabric": "Cotton Blend"
+  },
+  {
+    "name": "Men Printed Round Neck Cotton Blend Light Blue T-Shirt",
+    "id": 10,
+    "price": 264.0,
+    "image": "https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/q/5/y/xxl-ausk0936-ausk-original-imah3fh7ayfdwkkm.jpeg?q=70",
+    "type": "Round Neck",
+    "sleeve": "Half Sleeve",
+    "fit": "Oversized",
+    "fabric": "Cotton Blend"
   }
 ]

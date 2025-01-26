@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Background image wrapper */
+    .background-wrapper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background-size: cover;
+      background-position: center;
+      filter: blur(8px);
+      opacity: 0.6;
+    }
+
+    /* Gradient overlay */
+    .background-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background: linear-gradient(135deg, rgba(45, 45, 45, 0.7), rgba(29, 15, 15, 0.7));
+    }
+
+    /* Product details container */
+    #product-details {
+      background: rgba(11, 11, 11, 0.455);
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 400px;
+      text-align: center;
+      margin: auto;
+    }
+
+    #product-details img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 15px;
+    }
+    .payment-page-container {
+      position: relative;
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      max-width: 400px;
+      text-align: center;
+      z-index: 1;
+      overflow: hidden; /* Prevent overflow */
+    }
+    .payment-page-container img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .payment-page-container h2 {
+      font-size: 1.5rem;
+      color: #333;
+      margin: 10px 0;
+    }
+    .payment-page-container p {
+      font-size: 1.2rem;
+      color: #666;
+      margin: 10px 0 20px;
+    }
+
+    /* Payment options */
+    .payment-options {
+      margin-top: 20px;
+    }
+
+    
+    .payment-options button:hover {
+      background-color: #323131;
+    }
+    .product-container {
+  max-width: 400px;
+  margin: auto;
+    }
+
+.product-container h2 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #383636;
+}
+
+.product-container .product-image {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-container .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e53935;
+  margin-bottom: 20px;
+}
+
+.size-options h3 {
+  font-size: 1rem;
+  margin-bottom: 2px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.sizes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.size-btn {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: #f9f9f9;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.size-btn:hover {
+  background: #ddd;
+}
+
+#proceed-to-payment {
+  display: block;
+  width: 100%;
+  background: #79180b;
+  color: white;
+  border: none;
+  padding: 10;
+  height: 1cm;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  transition: background 0.3s ease;
+}
+
+#proceed-to-payment:hover {
+  background: #443636;
+}
+    .price {
+      font-size: 1.5rem;
+      color: #efeceb;
+    }
+    /* Payment options */
+    .payment-options h3 {
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      color: #555;
+    }
+
+    .payment-options button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      font-size: 1rem;
+      margin: 10px 0;
+      background-color: #623939;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    
+
+    body {
+    background: linear-gradient(90deg, #3b3a3a, #171515);
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+     <!-- Background image and gradient overlay -->
+
+ 
+
+  <!-- Product details container -->
+  <div id="product-details">
+    <!-- Product details will be dynamically injected by JavaScript -->
+  </div>
+
+  <script src="payment.js"></script>
+</body>
+</html>

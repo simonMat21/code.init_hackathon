@@ -1,6 +1,7 @@
 const params = new URLSearchParams(window.location.search);
 const productid = params.get("id");
 console.log(productid);
+
 fetch("products.json")
   .then((response) => response.json())
   .then((products) => {
@@ -57,7 +58,7 @@ fetch("products.json")
 
           <!-- Offers -->
           <div class="mt-4">
-            <h2 class="text-lg font-semibold">product details</h2>
+            <h2 class="text-lg font-semibold">Product Details</h2>
             <ul class="list-disc ml-6 text-sm mt-2">
               <li>
                 ${product.fit}
@@ -72,7 +73,40 @@ fetch("products.json")
                 ${product.sleeve}
               </li>
             </ul>
-          </div>`;
+            <button id="buy-now" class="px-4 py-2 border rounded-lg bg-green-500 text-white hover:bg-green-600">
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>`;
+      // Update background color
+      document.body.style.backgroundColor = product.color || "#f4f4f9";
+      // Add event listener for the "Buy Now" button
+      document.getElementById("buy-now").addEventListener("click", () => {
+        // Store the product details in localStorage
+        // localStorage.setItem("selectedProduct", JSON.stringify(product));
+        fetch(
+          `http://127.0.0.1:3000/add-product?${encodeURIComponent(product.id)}`,
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
+          .then((response) => {
+            if (response.ok) {
+              console.log("ki");
+            } else {
+              console.log("op");
+            }
+
+            console.log(response);
+          })
+          .catch((error) => console.error("Error:", error));
+        // Redirect to payment page
+        window.location.href = "cart.html";
+      });
     } else {
       document.getElementById("product-details").innerHTML =
         "<p>Product not found</p>";
